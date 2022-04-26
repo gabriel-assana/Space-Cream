@@ -15,6 +15,9 @@
 
     --bg-body:#EFF1FF;
     --bg-body-text:#23053A;
+
+    --bg-tag-card: #FEEAFA;
+    --bg-text-card: #4A4E69;
 }    
 
 header { 
@@ -79,10 +82,41 @@ body{
 
 }
 
+.card{
+    margin: 0 auto;
+    position: relative;
+    animation: downtop 500ms;
+}
+
+.card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 11.2rem;
+    height: 3.5rem;
+    border-radius: 20px;
+    
+    position:absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    
+    background-color: var(--bg-tag-card);
+    color: var(--bg-text-card);
+
+    font-family: var(--ff-texting);
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05rem;
+    
+    animation: topdown 2s;
+
+}
+
 .painting-type-one{
     width: 32.0rem;
     height: 25.0rem;
-    margin: 0 auto;
 
     border-radius: 2.0rem;
     margin-bottom: 3.2rem;
@@ -91,8 +125,31 @@ body{
 .painting-type-two{
     width: 32.0rem;
     height: 45.0rem;
-    margin: 0 auto;
 
     border-radius: 2.0rem;
     margin-bottom: 3.2rem;
 }
+
+@keyframes topdown {
+    0% {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes downtop {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
