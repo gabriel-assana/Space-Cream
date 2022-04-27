@@ -189,17 +189,9 @@ body{
   @media (min-width: 750px) {
 
     header {
-         margin-bottom: 22rem;
+         margin-bottom: 30rem;
     }
 
-    main{
-        display: flex;
-        flex-direction: column;
-        
-        width: 100%;
-        padding: 0 3.2rem;
-    }
-    
     .wrapper{
         width: 70rem;
         padding: 1rem;
@@ -246,6 +238,142 @@ body{
 
 
 @media (min-width: 1024px) {
- 
 
+    .container{
+        max-width: 140rem;
+        width: 12.8rem;
+      
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: 38rem 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+
+            'header main'
+            'header footer'
+        ;
+        margin: 0;
+        
+    }
+
+    header{
+        grid-area: header;
+        height: 100%;  
+    }
+
+    header p{
+        font-size: 1.5rem
+    }
+
+    .text-header{
+        background-color: var(--bg-header);
+    }
+    .text-header p {
+        color: var(--bg-header-text);
+    }
+    
+    .wrapper{
+        margin: 0rem 0 0 5rem;
+    }
+ 
+    main{
+        grid-area: main;
+        gap: 3.2rem;
+        min-height: 100%;
+        padding: 5rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "A B C " 
+            "D B F" 
+            "D E F "
+        ;
+    }
+
+    main div:nth-child(1){
+        grid-area: A ;
+        animation: topdown 2000ms 400ms backwards;
+    }
+    main div:nth-child(2){
+        grid-area: B;
+        animation: topdown 2000ms 800ms backwards  ;
+
+    }
+    main div:nth-child(3){
+        grid-area: C ;
+        animation: topdown 2000ms 1200ms backwards;
+
+    }
+    main div:nth-child(4){
+        grid-area: D ;
+        animation: downtop 2000ms 400ms backwards  ;
+
+    }
+    main div:nth-child(5){
+        grid-area: E;
+        animation: downtop 2000ms 800ms backwards;
+
+    }
+    main div:nth-child(6){
+        grid-area: F;
+        animation: downtop 2000ms 1200ms backwards  ;
+
+    }
+
+    .card img {
+        width: 18rem;
+        object-fit: cover;
+    }
+
+    .card span {
+        width: 6rem;
+        height: 2rem;
+
+        font-size: 1.5rem;
+        line-height: 3.4rem;
+        letter-spacing: 0.05rem;
+    }
+   
+    footer{
+        grid-area: footer;
+
+        width: 100%;
+        font-size: 1.4rem;
+        background-color: var(--bg-body);
+
+    }
+
+    footer span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1200px ) {
+    .card img {
+        width: 30rem;
+        object-fit: cover;
+    }
+
+    .card span {
+
+        width: 11.2rem;
+        height: 3.5rem;
+
+        font-size: 2.0rem;
+        line-height: 3.4rem;
+        letter-spacing: 0.05rem;
+    
+    
+    }
+
+    .wrapper {
+        margin: 0rem 0 0 20rem;
+    }
+
+    footer {
+        margin-left: 10rem;
+    }
 }
