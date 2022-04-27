@@ -22,21 +22,29 @@
   
   </br>
  
- <div align="center">
+ <h2 align="center">
     :iphone: Versão Mobile
- </div> 
+ </h2> 
  
   <div align="center">
-      <img src="images/mobile.png" alt="versão mobile"/>
+      <img src="images/mobile.gif" alt="versão mobile"/>
   </div>
    
- <div align="center">
+ <h2 align="center">
     :computer: versão tablets (breakpoint - 700px)
- </div> 
+ </h2> 
  
-  <div align="center">
-      <img src="images/tablet.png" alt="versão tablets"/>
-  </div>
+  <h2 align="center">
+      <img src="images/tablets.gif" alt="versão tablets"/>
+  </h2>
+  
+   <h2 align="center">
+    :computer: Versão Desktop (breakpoint - 1024px)
+ </h2> 
+ 
+  <h2 align="center">
+      <img src="images/desktop.gif" alt="versão tablets"/>
+  </h2>
 
   
 ## :rocket: Tecnologias
