@@ -11,7 +11,7 @@
 
 <div align="center">
    <p>
-   Desafio tem como principal objetivo realizar a construção de uma landing page de sorveteria totalmente do zero, sendo responsiva em telas Desktop e Mobile, pagina foi construida sendo em protótipo passado pelo Figma, utilizando os conhecimentos adquiridos nas aulas do nível 03.
+   Desafio tem como principal objetivo realizar a construção de uma landing page de sorveteria totalmente do zero, sendo responsiva em telas Desktop e Mobile, pagina foi construida com protótipo passado pelo Figma, utilizando os conhecimentos adquiridos nas aulas do nível 03.
   </p>
 
 </div>
