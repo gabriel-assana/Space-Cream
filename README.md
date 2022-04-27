@@ -1,6 +1,6 @@
-<h1 align="center">
-  Space Cream
-</h1>
+ <div align="center">
+    <img src="images/logo.png" alt="logo"/>
+ </div>
 
 <h2 align="center" >Descrição do Projeto</h2>
 <p align="center">
@@ -15,11 +15,7 @@
   </p>
 
 </div>
-   
-   <div align="center">
-      <img src="images/logo.png" alt="logo"/>
-  </div>
-  
+    
   </br>
  
  <h2 align="center">
