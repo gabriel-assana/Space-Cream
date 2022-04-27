@@ -351,10 +351,19 @@ body{
 
 }
 
-@media (min-width: 1200px ) {
+@media (min-width: 1200px) {
+    .wrapper {
+        margin: 0rem 0 0 5rem;
+    }
+
     .card img {
-        width: 30rem;
+        width: 20rem;
         object-fit: cover;
+        transition: transform 1s;
+    }
+
+    .card img:hover {
+        transform: scale(1.1);
     }
 
     .card span {
@@ -365,15 +374,33 @@ body{
         font-size: 2.0rem;
         line-height: 3.4rem;
         letter-spacing: 0.05rem;
-    
-    
+
     }
 
+
+    footer {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    
     .wrapper {
-        margin: 0rem 0 0 20rem;
+        margin: 1rem 0 0 15rem;
+    }
+
+    .card img {
+        width: 30rem;
+        object-fit: cover;
+        transition: transform 1s;
+    }
+
+    .card img:hover {
+        transform: scale(1.1);
     }
 
     footer {
-        margin-left: 10rem;
+        margin-left: 8rem;
     }
 }
