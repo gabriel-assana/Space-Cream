@@ -65,3 +65,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e conceitos:
 
 ✔️ Media queries.
 
+
